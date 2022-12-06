@@ -8,10 +8,12 @@ export const Filter = () => {
   const dispatch = useDispatch();
 
   const onChange = debounce(e => {
-    const value = e.target.value.toLowerCase();
+  const value = e.target.value.toLowerCase();
 
-    dispatch(setFilter(value));
+  dispatch(setFilter(value));
+    
   },1000);
+
 
   return (
     <label className={style.filterLabel}>

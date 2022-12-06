@@ -33,7 +33,7 @@ console.log(data)
   const contactsFilter = filteredContacts();
 
   return (
-    <div>
+    
       <ul className={style.contactsList}>
         {contactsFilter.map(({ id, name, phone }) => (
           <li key={id} className={style.contactsItem}>
@@ -52,7 +52,7 @@ console.log(data)
           </li>
         ))}
       </ul>
-    </div>
+    
   );
 };
 
