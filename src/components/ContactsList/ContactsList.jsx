@@ -37,14 +37,18 @@ console.log(data)
       <ul className={style.contactsList}>
         {contactsFilter.map(({ id, name, phone }) => (
           <li key={id} className={style.contactsItem}>
-            <span className={style.contactsName}>{`${name}`}</span><span className={style.contactsPhone}>{`${phone}`}</span>
+            <img src="https://www.freeiconspng.com/uploads/am-a-19-year-old-multimedia-artist-student-from-manila--21.png" alt='avatar' width="50" /> 
+            <div className={style.wrapper}>
+              <span className={style.contactsName}>{`${name}`}</span><span className={style.contactsPhone}>{`${phone}`}</span>
+              
             <button
               type="button"
               className={style.contactBtn}
               onClick={() => deleteContact(id)}
             >
               Delete
-            </button>
+              </button>
+              </div>
           </li>
         ))}
       </ul>

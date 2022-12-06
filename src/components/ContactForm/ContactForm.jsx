@@ -40,7 +40,7 @@ const ContactForm = () => {
 
   return (
     <form className={style.form} onSubmit={addNewContact}>
-      <label htmlFor={id}>Name</label>
+      <label htmlFor={id} className={style.formText}>Name</label>
       <input
         className={style.formInput}
         id={id}
@@ -51,7 +51,7 @@ const ContactForm = () => {
         title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
         required
       />
-      <label htmlFor={id}>Phone</label>
+      <label htmlFor={id} className={style.formText}>Phone</label>
       <input
         className={style.formInput}
         id={id}
