@@ -9,8 +9,10 @@ const App = () => {
   return (
     <div className={style.container}>
       <h1>Phonebook</h1>
+      <div className={style.wrapper}>
       <ContactForm />
-      <Filter/>
+      <Filter />
+      </div>
       <ContactList/>
     </div>
   );

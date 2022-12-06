@@ -11,3 +11,14 @@
 ul {
     list-style: none;
 }
+
+.wrapper{
+    background-color: rgb(165, 137, 192);
+    padding: 25px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}

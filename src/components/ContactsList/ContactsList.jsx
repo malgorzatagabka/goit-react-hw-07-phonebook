@@ -37,7 +37,7 @@ console.log(data)
       <ul className={style.contactsList}>
         {contactsFilter.map(({ id, name, phone }) => (
           <li key={id} className={style.contactsItem}>
-            <span className={style.contactsName}>{`${name}:`}</span> <span className={style.contactsPhone}>{`${phone}`}</span>
+            <span className={style.contactsName}>{`${name}`}</span><span className={style.contactsPhone}>{`${phone}`}</span>
             <button
               type="button"
               className={style.contactBtn}

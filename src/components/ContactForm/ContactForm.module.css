@@ -34,3 +34,7 @@ flex-direction: column;
     box-shadow: 5px 5px 5px rgb(85, 84, 84);
 
 }
+
+::placeholder{
+font-size: 12px;
+}
