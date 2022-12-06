@@ -1,0 +1,22 @@
+import style from './Filter.module.css';
+import { useDispatch } from 'react-redux';
+import { setFilter } from 'redux/fiterSlice';
+import debounce from 'debounce';
+
+export const Filter = () => {
+    
+  const dispatch = useDispatch();
+
+  const onChange = debounce(e => {
+    const value = e.target.value.toLowerCase();
+
+    dispatch(setFilter(value));
+  },1000);
+
+  return (
+    <label className={style.filterLabel}>
+      Find contacts by name
+      <input className={style.filterInput} type="name" onChange={onChange} />
+    </label>
+  );
+};
