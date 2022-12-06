@@ -35,9 +35,9 @@ console.log(data)
   return (
     
       <ul className={style.contactsList}>
-        {contactsFilter.map(({ id, name, phone }) => (
+        {contactsFilter.map(({ id, name, phone, image }) => (
           <li key={id} className={style.contactsItem}>
-            <img src="https://www.freeiconspng.com/uploads/am-a-19-year-old-multimedia-artist-student-from-manila--21.png" alt='avatar' width="50" /> 
+            <img src={image} alt='avatar' width="50" /> 
             <div className={style.wrapper}>
               <span className={style.contactsName}>{`${name}`}</span><span className={style.contactsPhone}>{`${phone}`}</span>
               
