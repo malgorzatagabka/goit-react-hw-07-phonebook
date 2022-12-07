@@ -37,7 +37,7 @@ console.log(data)
       <ul className={style.contactsList}>
         {contactsFilter.map(({ id, name, phone, image }) => (
           <li key={id} className={style.contactsItem}>
-            <img src={image} alt='avatar' width="50" /> 
+            <img className={ style.contactImage}src={image} alt='avatar' width="80" height="80" /> 
             <div className={style.wrapper}>
               <span className={style.contactsName}>{`${name}`}</span><span className={style.contactsPhone}>{`${phone}`}</span>
               

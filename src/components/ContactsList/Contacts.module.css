@@ -58,3 +58,6 @@ align-items: center;
   margin-top: 5px;
 }
 
+.contactImage{
+  border-radius: 50px;
+}
