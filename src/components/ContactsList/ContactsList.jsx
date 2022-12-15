@@ -10,7 +10,6 @@ export const ContactList = () => {
   const [deleteContact] = useDeleteContactMutation();
 
   const filterValue = useSelector(getFilterValue);
-console.log(data)
 
   if (isLoading) {
     return <Loader/>;
@@ -20,17 +19,9 @@ console.log(data)
     return <div>No contacts</div>;
   }
 
-  const filteredContacts = () => {
-    const normalizedFilter = filterValue.toLowerCase();
-    return (
-      data &&
-      data.filter(contact =>
-        contact.name.toLowerCase().includes(normalizedFilter)
-      )
-    );
-  };
-
-  const contactsFilter = filteredContacts();
+const contactsFilter = data.filter(contact =>
+contact.name.toLowerCase().includes(filterValue.toLowerCase())
+) 
 
   return (
     
